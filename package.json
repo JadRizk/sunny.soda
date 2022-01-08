@@ -6,10 +6,13 @@
     "start": "nx run app:serve",
     "build:app:prod": "nx run app:build:production",
     "start:app:prod": "nx run app:serve:production",
-    "test": "yarn test:app",
     "test:app": "nx run ui-shared:test",
-    "lint": "yarn lint:app",
-    "lint:app": "nx run ui-shared:lint"
+    "test:ui-shared": "nx run ui-shared:test",
+    "test": "yarn test:app && yarn test:ui-shared",
+    "lint:app": "nx run ui-shared:lint",
+    "lint:ui-shared": "nx run ui-shared:lint",
+    "lint": "yarn lint:app && yarn lint:ui-shared",
+    "start:storybook": "nx run ui-shared:storybook"
   },
   "private": true,
   "dependencies": {
@@ -24,15 +27,23 @@
     "tslib": "^2.0.0"
   },
   "devDependencies": {
+    "@babel/core": "7.12.13",
+    "@babel/preset-typescript": "7.12.13",
     "@nrwl/cli": "13.4.3",
     "@nrwl/cypress": "13.4.3",
     "@nrwl/eslint-plugin-nx": "13.4.3",
     "@nrwl/jest": "13.4.3",
     "@nrwl/linter": "13.4.3",
     "@nrwl/react": "13.4.3",
+    "@nrwl/storybook": "13.4.3",
     "@nrwl/tao": "13.4.3",
     "@nrwl/web": "13.4.3",
     "@nrwl/workspace": "13.4.3",
+    "@storybook/addon-essentials": "~6.4.5",
+    "@storybook/builder-webpack5": "~6.4.5",
+    "@storybook/manager-webpack5": "~6.4.5",
+    "@storybook/react": "~6.4.5",
+    "@svgr/webpack": "^5.4.0",
     "@testing-library/react": "12.1.2",
     "@testing-library/react-hooks": "7.0.2",
     "@types/jest": "27.0.2",
@@ -44,6 +55,7 @@
     "@typescript-eslint/eslint-plugin": "~5.3.0",
     "@typescript-eslint/parser": "~5.3.0",
     "babel-jest": "27.2.3",
+    "babel-loader": "8.1.0",
     "babel-plugin-styled-components": "1.10.7",
     "cypress": "^9.1.0",
     "eslint": "8.2.0",
@@ -58,6 +70,7 @@
     "prettier": "^2.3.1",
     "react-test-renderer": "17.0.2",
     "ts-jest": "27.0.5",
-    "typescript": "~4.4.3"
+    "typescript": "~4.4.3",
+    "url-loader": "^3.0.0"
   }
 }
