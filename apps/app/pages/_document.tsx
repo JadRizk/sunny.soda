@@ -2,6 +2,7 @@
 import { ReactElement } from 'react';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
+import { bodyFontURL, headerFontURL } from '@sunny.soda/ui-shared';
 
 export default class CustomDocument extends Document<{
   styleTags: ReactElement[];
@@ -21,7 +22,11 @@ export default class CustomDocument extends Document<{
   render() {
     return (
       <Html>
-        <Head>{this.props.styleTags}</Head>
+        <Head>
+          <link href={headerFontURL} rel="stylesheet" />
+          <link href={bodyFontURL} rel="stylesheet" />
+          {this.props.styleTags}
+        </Head>
         <body>
           <Main />
           <NextScript />
