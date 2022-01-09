@@ -4,6 +4,6 @@ export type Fonts = {
 };
 
 export const fonts: Fonts = {
-  header: "'Allan', cursive",
-  body: "'Lato', sans-serif",
+  header: "'Allan', cursive, system-ui, -apple-system",
+  body: "'Lato', sans-serif, system-ui, -apple-system",
 };

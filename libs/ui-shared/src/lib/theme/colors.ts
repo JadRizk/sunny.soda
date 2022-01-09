@@ -29,18 +29,22 @@ export type Colors = {
   orange8: string;
   orange9: string;
   orange10: string;
-  sand1: string;
-  sand2: string;
-  sand3: string;
-  sand4: string;
-  sand5: string;
-  sand6: string;
-  sand7: string;
-  sand8: string;
-  sand9: string;
-  sand10: string;
-  white: string;
+  shade1: string;
+  shade2: string;
+  shade3: string;
+  shade4: string;
+  shade5: string;
+  shade6: string;
+  shade7: string;
+  shade8: string;
+  shade9: string;
+  shade10: string;
+  base: string;
+  baseContrast: string;
+  body: string;
+  header: string;
   transparent: string;
+  white: string;
 };
 
 const yellowColors = {
@@ -82,24 +86,28 @@ const orangeColors = {
   orange10: '#612500',
 };
 
-const sandColors = {
-  sand1: '#EEEEEC',
-  sand2: '#DDDCD9',
-  sand3: '#CCCBC5',
-  sand4: '#BBB9B2',
-  sand5: '#AAA89F',
-  sand6: '#969385',
-  sand7: '#858274',
-  sand8: '#737061',
-  sand9: '#504D42',
-  sand10: '#121212',
+const shadeColors = {
+  shade1: 'rgba(235, 244, 255, 0.9)',
+  shade2: 'rgba(226, 238, 254, 0.8)',
+  shade3: 'rgba(217, 232, 252, 0.7)',
+  shade4: 'rgba(209, 227, 250, 0.6)',
+  shade5: 'rgba(201, 221, 248, 0.5)',
+  shade6: 'rgba(293, 216, 245, 0.41)',
+  shade7: 'rgba(186, 210, 242, 0.32)',
+  shade8: 'rgba(180, 205, 238, 0.23)',
+  shade9: 'rgba(173, 200, 235, 0.14)',
+  shade10: 'rgba(192, 213, 242, 0.06)',
 };
 
 export const colors: Colors = {
   ...yellowColors,
   ...redColors,
   ...orangeColors,
-  ...sandColors,
+  ...shadeColors,
   transparent: 'transparent',
   white: '#fff',
+  base: '#223348',
+  baseContrast: '#263E54',
+  body: '#EBF4FF',
+  header: '#F5F9FF',
 };
