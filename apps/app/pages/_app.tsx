@@ -3,7 +3,7 @@ import { AppProps } from 'next/app';
 import Head from 'next/head';
 import { ThemeProvider } from 'styled-components';
 import { DAppProvider, Config, Mainnet } from '@usedapp/core';
-import './styles.css';
+import { PageLayout } from '../src/components/PageLayout';
 
 const config: Config = {
   readOnlyChainId: Mainnet.chainId,
@@ -19,11 +19,11 @@ function CustomApp({ Component, pageProps }: AppProps) {
       <DAppProvider config={config}>
         <GlobalStyle />
         <Head>
-          <title>Welcome to app!</title>
+          <title>Sunny.Soda</title>
         </Head>
-        <main className="app">
+        <PageLayout>
           <Component {...pageProps} />
-        </main>
+        </PageLayout>
       </DAppProvider>
     </ThemeProvider>
   );
