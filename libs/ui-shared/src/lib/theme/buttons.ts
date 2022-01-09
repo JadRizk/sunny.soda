@@ -26,7 +26,7 @@ const buttonAppearances: ButtonAppearances = {
     borderAppearance: '1px solid',
   },
   outline: {
-    bgColor: 'white',
+    bgColor: 'shade10',
     borderAppearance: '1px solid',
   },
   ghost: {
@@ -35,7 +35,7 @@ const buttonAppearances: ButtonAppearances = {
     borderColor: 'transparent',
   },
   dashed: {
-    bgColor: 'white',
+    bgColor: 'shade10',
     borderAppearance: '1px dashed',
   },
 };
@@ -67,7 +67,7 @@ const buttonColors: ButtonColors = {
   primary: {
     initial: 'yellow6',
     hover: 'yellow7',
-    active: 'yellow9',
+    active: 'yellow8',
   },
   danger: {
     initial: 'red5',
@@ -76,9 +76,9 @@ const buttonColors: ButtonColors = {
   },
   secondary: {
     initial: {
-      color: 'shade9',
-      bgColor: 'shade9',
-      borderColor: 'shade5',
+      color: 'white',
+      bgColor: 'shade5',
+      borderColor: 'shade2',
     },
     hover: {
       color: 'shade9',

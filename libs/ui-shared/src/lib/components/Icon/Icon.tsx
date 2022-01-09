@@ -1,5 +1,5 @@
 import { SVGProps, forwardRef, memo, Ref } from 'react';
-import { ThemeColor } from '../../theme';
+import { theme, ThemeColor } from '../../theme';
 import styled, { useTheme, css } from 'styled-components';
 import * as Icons from './iconsContent';
 
@@ -26,8 +26,8 @@ const IconComp = (
   { name, size = 24, color, ...rest }: IconProps,
   ref?: Ref<SVGSVGElement>
 ) => {
+  // TODO: useTheme from styled-components
   const IconContent = IconsContent[name];
-  const theme = useTheme();
   const fill = color && theme.colors[color];
 
   return (
