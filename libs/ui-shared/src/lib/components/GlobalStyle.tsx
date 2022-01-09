@@ -1,6 +1,7 @@
 import { createGlobalStyle, css } from 'styled-components';
+import { Theme } from '../theme';
 
-export const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle<{ theme: Theme }>`
   ${({ theme }) => css`
     /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
