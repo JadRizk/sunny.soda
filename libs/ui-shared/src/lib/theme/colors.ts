@@ -87,16 +87,16 @@ const orangeColors = {
 };
 
 const shadeColors = {
-  shade1: 'rgba(235, 244, 255, 0.9)',
-  shade2: 'rgba(226, 238, 254, 0.8)',
-  shade3: 'rgba(217, 232, 252, 0.7)',
-  shade4: 'rgba(209, 227, 250, 0.6)',
-  shade5: 'rgba(201, 221, 248, 0.5)',
-  shade6: 'rgba(293, 216, 245, 0.41)',
-  shade7: 'rgba(186, 210, 242, 0.32)',
-  shade8: 'rgba(180, 205, 238, 0.23)',
-  shade9: 'rgba(173, 200, 235, 0.14)',
-  shade10: 'rgba(192, 213, 242, 0.06)',
+  shade1: '#d5e0ed',
+  shade2: '#b9c8db',
+  shade3: '#9eb3c8',
+  shade4: '#879eb5',
+  shade5: '#7089a2',
+  shade6: '#5e7891',
+  shade7: '#4e6781',
+  shade8: '#3e5770',
+  shade9: '#314961',
+  shade10: '#263e54',
 };
 
 export const colors: Colors = {
