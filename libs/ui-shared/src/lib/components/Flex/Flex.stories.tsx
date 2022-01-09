@@ -14,9 +14,9 @@ const Item = styled(Flex.Item)<{
   ${({ theme: { colors, spacings }, color, width, height }) => css`
     background: ${color ? colors[color] : colors.yellow4};
     padding: ${spacings.spacing09};
-    color: ${colors.sand7};
+    color: ${colors.baseContrast};
     text-align: center;
-    border: 1px solid ${colors.sand8};
+    border: 1px solid ${colors.baseContrast};
     width: ${width ? `${width}px` : 'auto'};
     height: ${height ? `${height}px` : 'auto'};
   `};

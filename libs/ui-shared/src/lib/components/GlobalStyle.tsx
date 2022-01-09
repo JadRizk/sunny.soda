@@ -27,10 +27,11 @@ export const GlobalStyle = createGlobalStyle<{ theme: Theme }>`
     */
 
     html {
-      line-height: 1.15; /* 1 */
+      line-height: ${theme.lineHeights.normal};
       -webkit-text-size-adjust: 100%; /* 2 */
       -moz-tab-size: 4; /* 3 */
       tab-size: 4; /* 3 */
+      font-size: 62.5%; /* font-size 1em = 10px on default browser settings */
     }
 
     /*
@@ -45,9 +46,13 @@ export const GlobalStyle = createGlobalStyle<{ theme: Theme }>`
 
     body {
       margin: 0; /* 1 */
+      font-size: ${theme.fontSizes.scale03};
+      color: ${theme.colors.body};
+      background-color: ${theme.colors.base};
       font-family: system-ui, -apple-system,
         /* Firefox supports this but not yet \`system-ui\` */'Segoe UI', Roboto,
         Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'; /* 2 */
+      font-family: ${theme.fonts.body};
     }
 
     /*
@@ -278,14 +283,9 @@ export const GlobalStyle = createGlobalStyle<{ theme: Theme }>`
     }
 
     html {
-      line-height: ${theme.lineHeights.normal};
-      font-size: 62.5%; /* font-size 1em = 10px on default browser settings */
     }
 
     body {
-      font-family: ${theme.fonts.body};
-      font-size: ${theme.fontSizes.scale03};
-      color: ${theme.colors.sand10};
       margin: 0;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
@@ -298,6 +298,7 @@ export const GlobalStyle = createGlobalStyle<{ theme: Theme }>`
     h5,
     h6 {
       font-family: ${theme.fonts.header};
+      color: ${theme.colors.header};
     }
 
     blockquote,

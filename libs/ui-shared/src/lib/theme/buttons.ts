@@ -76,16 +76,16 @@ const buttonColors: ButtonColors = {
   },
   secondary: {
     initial: {
-      color: 'sand9',
-      bgColor: 'sand9',
-      borderColor: 'sand5',
+      color: 'shade9',
+      bgColor: 'shade9',
+      borderColor: 'shade5',
     },
     hover: {
-      color: 'sand9',
-      bgColor: 'sand10',
-      borderColor: 'sand7',
+      color: 'shade9',
+      bgColor: 'shade10',
+      borderColor: 'shade7',
     },
-    active: 'sand10',
+    active: 'shade10',
   },
 };
 

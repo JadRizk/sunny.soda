@@ -49,14 +49,14 @@ const inputsSizes: InputsSizeStyles = {
 const inputStyles: InputStyleStyles = {
   default: {
     initial: {
-      color: colors.sand10,
-      bgColor: colors.sand1,
+      color: colors.shade10,
+      bgColor: colors.shade1,
       borderWidth: '0px',
       borderColor: 'transparent',
       shadow: 'none',
     },
     active: {
-      color: colors.sand10,
+      color: colors.shade10,
       bgColor: colors.white,
       borderWidth: '0px',
       borderColor: 'transparent',
