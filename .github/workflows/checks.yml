@@ -1,0 +1,21 @@
+name: Sanity Checks
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+jobs:
+  checks-run:
+    name: Checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: yarn --prefer-offline --ignore-scripts
+
+      - name: Unit Tests
+        run: yarn test
+
+      - name: TS Lint
+        run: yarn lint
