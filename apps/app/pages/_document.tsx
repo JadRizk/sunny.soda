@@ -1,31 +1,47 @@
-/* eslint-disable react/display-name */
-import { ReactElement } from 'react';
-import Document, { Html, Head, Main, NextScript } from 'next/document';
-import { ServerStyleSheet } from 'styled-components';
 import { bodyFontURL, headerFontURL } from '@sunny.soda/ui-shared';
+import Document, {
+  Html,
+  Head,
+  Main,
+  NextScript,
+  DocumentContext,
+} from 'next/document';
+import React from 'react';
+import { ServerStyleSheet } from 'styled-components';
 
-export default class CustomDocument extends Document<{
-  styleTags: ReactElement[];
-}> {
-  static getInitialProps({ renderPage }) {
+export default class MyDocument extends Document {
+  static override async getInitialProps(ctx: DocumentContext) {
     const sheet = new ServerStyleSheet();
+    const originalRenderPage = ctx.renderPage;
 
-    const page = renderPage(
-      (App) => (props) => sheet.collectStyles(<App {...props} />)
-    );
+    try {
+      ctx.renderPage = () =>
+        originalRenderPage({
+          enhanceApp: (App) => (props) =>
+            sheet.collectStyles(<App {...props} />),
+        });
 
-    const styleTags = sheet.getStyleElement();
-
-    return { ...page, styleTags };
+      const initialProps = await Document.getInitialProps(ctx);
+      return {
+        ...initialProps,
+        styles: (
+          <>
+            {initialProps.styles}
+            {sheet.getStyleElement()}
+          </>
+        ),
+      };
+    } finally {
+      sheet.seal();
+    }
   }
 
-  render() {
+  override render() {
     return (
       <Html>
         <Head>
           <link href={headerFontURL} rel="stylesheet" />
           <link href={bodyFontURL} rel="stylesheet" />
-          {this.props.styleTags}
         </Head>
         <body>
           <Main />
