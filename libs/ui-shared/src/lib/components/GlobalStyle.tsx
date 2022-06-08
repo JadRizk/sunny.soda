@@ -52,7 +52,7 @@ export const GlobalStyle = createGlobalStyle<{ theme: Theme }>`
       font-family: system-ui, -apple-system,
         /* Firefox supports this but not yet \`system-ui\` */'Segoe UI', Roboto,
         Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'; /* 2 */
-      font-family: ${theme.fonts.body};
+      font-family: ${theme.fonts.main};
     }
 
     /*
@@ -297,7 +297,6 @@ export const GlobalStyle = createGlobalStyle<{ theme: Theme }>`
     h4,
     h5,
     h6 {
-      font-family: ${theme.fonts.header};
       color: ${theme.colors.header};
     }
 

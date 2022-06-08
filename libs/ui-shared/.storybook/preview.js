@@ -1,12 +1,11 @@
 import { createGlobalStyle, css, ThemeProvider } from 'styled-components';
 import { theme } from '../src/index';
 import { GlobalStyle } from '../src/lib/components/GlobalStyle';
-import { bodyFontURL, headerFontURL } from '../src/lib/theme';
+import { fontURL } from '../src/lib/theme';
 
 const StorybookGlobalStyle = createGlobalStyle`
   ${() => css`
-    @import url(${headerFontURL});
-    @import url(${bodyFontURL});
+    @import url(${fontURL});
     #root {
       height: 100vh;
     }

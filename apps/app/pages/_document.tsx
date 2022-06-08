@@ -1,4 +1,4 @@
-import { bodyFontURL, headerFontURL } from '@sunny.soda/ui-shared';
+import { fontURL } from '@sunny.soda/ui-shared';
 import Document, {
   Html,
   Head,
@@ -40,8 +40,7 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link href={headerFontURL} rel="stylesheet" />
-          <link href={bodyFontURL} rel="stylesheet" />
+          <link href={fontURL} rel="stylesheet" />
         </Head>
         <body>
           <Main />

@@ -6,15 +6,13 @@ import { Screens, screens } from './screens';
 import { Buttons, buttons } from './buttons';
 import { inputs, Inputs } from './Input';
 import { zIndices, ZIndices } from './zIndices';
-import { fonts, Fonts } from './fonts';
 
-export const headerFontURL = `https://fonts.googleapis.com/css2?family=Allan:wght@400;700&display=swap`;
-export const bodyFontURL = `https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap`;
+export const fontURL = `https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Quicksand:wght@300;400;500;600;700&display=swap`;
 
 export interface Theme {
   buttons: Buttons;
   colors: Colors;
-  fonts: Fonts;
+  fonts: { main: string };
   fontSizes: FontSizes;
   lineHeights: LineHeight;
   spacings: Spacings;
@@ -26,7 +24,9 @@ export interface Theme {
 export const theme: Theme = {
   buttons,
   colors,
-  fonts,
+  fonts: {
+    main: "'Quicksand', cursive, system-ui, -apple-system",
+  },
   fontSizes,
   lineHeights,
   spacings,
