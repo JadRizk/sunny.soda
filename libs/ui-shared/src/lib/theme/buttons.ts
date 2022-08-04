@@ -65,9 +65,9 @@ const buttonColors: ButtonColors = {
   // button colors define what's being colored and in which state.
   // you can also pass button appearances (check "secondary" button)
   primary: {
-    initial: 'yellow6',
-    hover: 'yellow7',
-    active: 'yellow8',
+    initial: 'purple6',
+    hover: 'purple7',
+    active: 'purple8',
   },
   danger: {
     initial: 'red5',

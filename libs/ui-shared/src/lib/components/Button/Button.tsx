@@ -97,7 +97,7 @@ const StyledButton = styled.button<
         pointer-events: none;
         color: ${colors.shade4};
         fill: ${colors.shade4};
-        background: ${colors.yellow4};
+        background: ${colors.purple4};
         border: 1px solid ${colors.shade8};
       `}
 

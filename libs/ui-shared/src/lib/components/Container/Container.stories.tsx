@@ -5,7 +5,7 @@ import { screens } from '../../theme/screens';
 
 const StyledContainer = styled(Container)`
   ${({ theme: { colors } }) => css`
-    background-color: ${colors.yellow3};
+    background-color: ${colors.purple3};
   `};
 `;
 
@@ -13,8 +13,8 @@ const ContainerContent = styled.div`
   ${({ theme: { colors } }) => css`
     padding: 20px;
     height: 100%;
-    background-color: ${colors.yellow2};
-    outline: 1px dashed ${colors.yellow7};
+    background-color: ${colors.purple2};
+    outline: 1px dashed ${colors.purple7};
     text-align: center;
     color: ${colors.baseContrast};
   `};

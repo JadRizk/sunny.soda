@@ -1,14 +1,24 @@
 export type Colors = {
-  yellow1: string;
-  yellow2: string;
-  yellow3: string;
-  yellow4: string;
-  yellow5: string;
-  yellow6: string;
-  yellow7: string;
-  yellow8: string;
-  yellow9: string;
-  yellow10: string;
+  purple1: string;
+  purple2: string;
+  purple3: string;
+  purple4: string;
+  purple5: string;
+  purple6: string;
+  purple7: string;
+  purple8: string;
+  purple9: string;
+  purple10: string;
+  green1: string;
+  green2: string;
+  green3: string;
+  green4: string;
+  green5: string;
+  green6: string;
+  green7: string;
+  green8: string;
+  green9: string;
+  green10: string;
   red1: string;
   red2: string;
   red3: string;
@@ -42,22 +52,34 @@ export type Colors = {
   base: string;
   baseContrast: string;
   body: string;
-  header: string;
   transparent: string;
   white: string;
 };
 
-const yellowColors = {
-  yellow1: '#fef5d7',
-  yellow2: '#feebaf',
-  yellow3: '#fde288',
-  yellow4: '#fdd860',
-  yellow5: '#fcce38',
-  yellow6: '#caa52d',
-  yellow7: '#977c22',
-  yellow8: '#655216',
-  yellow9: '#32290b',
-  yellow10: '#191506',
+const purpleColors = {
+  purple1: '#e2ddea',
+  purple2: '#c5bbd4',
+  purple3: '#a898bf',
+  purple4: '#8b76a9',
+  purple5: '#6e5494',
+  purple6: '#584376',
+  purple7: '#423259',
+  purple8: '#2c223b',
+  purple9: '#16111e',
+  purple10: '#0b080f',
+};
+
+const greenColors = {
+  green1: '#e2f4da',
+  green2: '#c4e8b4',
+  green3: '#a7dd8f',
+  green4: '#89d169',
+  green5: '#6cc644',
+  green6: '#569e36',
+  green7: '#417729',
+  green8: '#2b4f1b',
+  green9: '#16280e',
+  green10: '#0b1407',
 };
 
 const redColors = {
@@ -87,27 +109,27 @@ const orangeColors = {
 };
 
 const shadeColors = {
-  shade1: '#d5e0ed',
-  shade2: '#b9c8db',
-  shade3: '#9eb3c8',
-  shade4: '#879eb5',
-  shade5: '#7089a2',
-  shade6: '#5e7891',
-  shade7: '#4e6781',
-  shade8: '#3e5770',
-  shade9: '#314961',
-  shade10: '#263e54',
+  shade1: '#e9e9e9',
+  shade2: '#d3d3d3',
+  shade3: '#bebdbd',
+  shade4: '#a8a7a7',
+  shade5: '#929291',
+  shade6: '#7c7c7a',
+  shade7: '#666664',
+  shade8: '#51504e',
+  shade9: '#3b3a38',
+  shade10: '#252422',
 };
 
 export const colors: Colors = {
-  ...yellowColors,
+  ...purpleColors,
+  ...greenColors,
   ...redColors,
   ...orangeColors,
   ...shadeColors,
   transparent: 'transparent',
   white: '#fff',
-  base: '#223348',
-  baseContrast: '#263E54',
-  body: '#EBF4FF',
-  header: '#F5F9FF',
+  base: '#252422',
+  baseContrast: '#252422',
+  body: '#252422',
 };

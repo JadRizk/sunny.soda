@@ -48,7 +48,6 @@ export const GlobalStyle = createGlobalStyle<{ theme: Theme }>`
       margin: 0; /* 1 */
       font-size: ${theme.fontSizes.scale03};
       color: ${theme.colors.body};
-      background-color: ${theme.colors.base};
       font-family: system-ui, -apple-system,
         /* Firefox supports this but not yet \`system-ui\` */'Segoe UI', Roboto,
         Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'; /* 2 */
@@ -289,15 +288,6 @@ export const GlobalStyle = createGlobalStyle<{ theme: Theme }>`
       margin: 0;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      color: ${theme.colors.header};
     }
 
     blockquote,
