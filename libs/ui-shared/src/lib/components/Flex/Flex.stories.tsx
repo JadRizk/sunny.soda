@@ -1,4 +1,3 @@
-import { StoryFn } from '@storybook/addons';
 import styled, { css } from 'styled-components';
 import { ThemeColor } from '../../theme';
 import Flex from './Flex';
@@ -12,7 +11,7 @@ const Item = styled(Flex.Item)<{
   height?: number;
 }>`
   ${({ theme: { colors, spacings }, color, width, height }) => css`
-    background: ${color ? colors[color] : colors.purple4};
+    background: ${color ? colors[color] : colors.blue4};
     padding: ${spacings.spacing09};
     color: ${colors.baseContrast};
     text-align: center;
@@ -54,8 +53,8 @@ export const FlexNestedLayout = () => (
     <Item />
     <Item filled>
       <Flex alignItems={'center'}>
-        <Item color={'purple1'} />
-        <Item filled color={'purple1'} />
+        <Item color={'blue1'} />
+        <Item filled color={'blue1'} />
       </Flex>
     </Item>
   </Flex>
@@ -73,30 +72,30 @@ export const FlexSpacings = () => (
           lg: 'spacing05 spacing08',
         }}
       >
-        <Item filled color={'purple1'} />
-        <Item filled color={'purple1'} />
-        <Item filled color={'purple1'} />
-        <Item filled color={'purple1'} />
-        <Item filled color={'purple1'} />
+        <Item filled color={'blue1'} />
+        <Item filled color={'blue1'} />
+        <Item filled color={'blue1'} />
+        <Item filled color={'blue1'} />
+        <Item filled color={'blue1'} />
       </Flex>
     </Item>
     <Item width={400}>
       <TypeH4>Same spacings for X & Y + same on all Screens</TypeH4>
       <Flex alignItems={'center'} gap={{ default: 'spacing04' }}>
-        <Item filled color={'purple1'} />
-        <Item filled color={'purple1'} />
-        <Item filled color={'purple1'} />
-        <Item filled color={'purple1'} />
+        <Item filled color={'blue1'} />
+        <Item filled color={'blue1'} />
+        <Item filled color={'blue1'} />
+        <Item filled color={'blue1'} />
       </Flex>
     </Item>
     <Item width={400}>
       <TypeH4>Different spacings for X and Y but same on all screens</TypeH4>
       <Flex alignItems={'center'} gap={{ default: 'spacing10 spacing04' }}>
-        <Item filled color={'purple1'} />
-        <Item filled color={'purple1'} />
-        <Item filled color={'purple1'} />
-        <Item filled color={'purple1'} />
-        <Item filled color={'purple1'} />
+        <Item filled color={'blue1'} />
+        <Item filled color={'blue1'} />
+        <Item filled color={'blue1'} />
+        <Item filled color={'blue1'} />
+        <Item filled color={'blue1'} />
       </Flex>
     </Item>
   </Flex>

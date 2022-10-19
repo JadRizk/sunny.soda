@@ -1,11 +1,11 @@
 import styled, { css } from 'styled-components';
 import { Container, ContainerProps } from './Container';
-import { Meta, Story } from '@storybook/react';
+import { Story } from '@storybook/react';
 import { screens } from '../../theme/screens';
 
 const StyledContainer = styled(Container)`
   ${({ theme: { colors } }) => css`
-    background-color: ${colors.purple3};
+    background-color: ${colors.blue3};
   `};
 `;
 
@@ -13,8 +13,8 @@ const ContainerContent = styled.div`
   ${({ theme: { colors } }) => css`
     padding: 20px;
     height: 100%;
-    background-color: ${colors.purple2};
-    outline: 1px dashed ${colors.purple7};
+    background-color: ${colors.blue2};
+    outline: 1px dashed ${colors.blue7};
     text-align: center;
     color: ${colors.baseContrast};
   `};

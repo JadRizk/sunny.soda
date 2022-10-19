@@ -1,14 +1,14 @@
 export type Colors = {
-  purple1: string;
-  purple2: string;
-  purple3: string;
-  purple4: string;
-  purple5: string;
-  purple6: string;
-  purple7: string;
-  purple8: string;
-  purple9: string;
-  purple10: string;
+  blue1: string;
+  blue2: string;
+  blue3: string;
+  blue4: string;
+  blue5: string;
+  blue6: string;
+  blue7: string;
+  blue8: string;
+  blue9: string;
+  blue10: string;
   green1: string;
   green2: string;
   green3: string;
@@ -56,17 +56,17 @@ export type Colors = {
   white: string;
 };
 
-const purpleColors = {
-  purple1: '#e2ddea',
-  purple2: '#c5bbd4',
-  purple3: '#a898bf',
-  purple4: '#8b76a9',
-  purple5: '#6e5494',
-  purple6: '#584376',
-  purple7: '#423259',
-  purple8: '#2c223b',
-  purple9: '#16111e',
-  purple10: '#0b080f',
+const blueColors = {
+  blue1: '#7792E4',
+  blue2: '#6684E1',
+  blue3: '#5577DD',
+  blue4: '#4469DA',
+  blue5: '#335CD7',
+  blue6: '#2851CC',
+  blue7: '#254BBB',
+  blue8: '#2244AA',
+  blue9: '#1E3D99',
+  blue10: '#1B3688',
 };
 
 const greenColors = {
@@ -122,7 +122,7 @@ const shadeColors = {
 };
 
 export const colors: Colors = {
-  ...purpleColors,
+  ...blueColors,
   ...greenColors,
   ...redColors,
   ...orangeColors,

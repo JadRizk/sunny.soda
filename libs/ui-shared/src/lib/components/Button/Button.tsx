@@ -1,4 +1,4 @@
-import styled, { css, useTheme } from 'styled-components';
+import styled, { css } from 'styled-components';
 import React, { forwardRef, memo, Ref } from 'react';
 import {
   ButtonStyles,
@@ -9,7 +9,7 @@ import {
 } from '../../theme/buttons';
 import { Icon, IconName } from '../Icon/Icon';
 import Flex from '../Flex/Flex';
-import { theme, Theme } from '../../theme';
+import { theme } from '../../theme';
 
 const StyledButton = styled.button<
   StyledButtonProps & {
@@ -97,7 +97,7 @@ const StyledButton = styled.button<
         pointer-events: none;
         color: ${colors.shade4};
         fill: ${colors.shade4};
-        background: ${colors.purple4};
+        background: ${colors.blue4};
         border: 1px solid ${colors.shade8};
       `}
 
