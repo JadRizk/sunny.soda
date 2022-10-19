@@ -4,19 +4,18 @@ import Head from 'next/head';
 import { ThemeProvider } from 'styled-components';
 import { PageLayout } from '../src/components/PageLayout';
 
-
-function CustomApp({ Component, pageProps }: AppProps) {
+const App = ({ Component, pageProps }: AppProps) => {
   return (
     <ThemeProvider theme={theme}>
-        <GlobalStyle />
-        <Head>
-          <title>Sunny.Soda</title>
-        </Head>
-        <PageLayout>
-          <Component {...pageProps} />
-        </PageLayout>
+      <GlobalStyle />
+      <Head>
+        <title>Sunny.Soda</title>
+      </Head>
+      <PageLayout>
+        <Component {...pageProps} />
+      </PageLayout>
     </ThemeProvider>
   );
-}
+};
 
-export default CustomApp;
+export default App;
